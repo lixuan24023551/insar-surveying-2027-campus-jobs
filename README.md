@@ -22,13 +22,13 @@
 |---|---|---|---|---|
 | 中铁二院工程集团有限责任公司 | 测绘；遥感；GIS | 测绘类相关岗位 | 2026-11-30 | [公告](https://job.xjtu.edu.cn/xsfw/sys/emaphome/website/template/recruitmentDetail.html?gwid=3446b972e4f24aa38ebfa9432c08ac15&menuid=3446b972e4f24aa38ebfa9432c08ac15&msg=loading) |
 | 沈阳市勘察测绘研究院有限公司 | 测绘；遥感；自然资源调查 | 测绘工程师；调查监测工程师等 | 2026-11-30 | [公告](https://gzw.shenyang.gov.cn/rcdwjszl/202610/t20261020_5105555.html) |
-| 中煤航测遥感集团有限公司 | 测绘；遥感；GIS | 测绘地理信息；遥感应用；技术研发 | 2026-12-09 | [官网](https://arscmh.com/info/10385) |
-| 湖南省水利水电勘测设计规划研究总院有限公司 | **InSAR**；GIS；测绘 | GIS应用工程师（InSAR地表形变监测方向） | 2026-12-15 18:00 | [公告](http://job.nju.edu.cn/Zhaopin/xiaozhao.html?id=9dc6c285-a1a7-92d4-7144-6c60175d20e9&type=1) |
-| 湖南中勘北斗研究院有限公司 | **InSAR**；遥感；北斗 | InSAR遥感算法工程师 | 未注明 | [职位页](http://job.kmust.edu.cn/detail/job?id=3289527) |
-| 云南南方地勘工程有限公司 | **0857；085704**；测绘；遥感 | 遥感与测绘技术岗 | 未注明 | [公告](http://job.kmust.edu.cn/detail/career?id=732092) |
-| 中煤湖北地质局集团有限公司 | **085704**；测绘；GIS | 测绘研发与地理信息技术岗 | 2027-06-30 | [官网](https://hubei.ccgc.cn/html/1365/2026-11-16/44908.html) |
-| 甘肃省地质矿产勘查开发局测绘勘查院 | **085704**；测绘；遥感 | 测绘地理信息相关专业技术岗位 | 2027-05-31 | [官网](https://www.gsdkj.net/NoticeContent?aboutId=94af571e-81a9-4407-9f7d-d9e6d0c9ca6a) |
-| 长光卫星技术股份有限公司 | 测绘；遥感；资源与环境；GIS | 遥感测绘工程师；算法工程师 | 2027-05-31 | [网申](https://cgwx.hotjob.cn/) |
+| 中煤航测遥感集团有限公司 | 测绘；遥感；GIS | 测绘地理信息；遥感应用；技术研发；软件开发 | 2026-12-09 | [官网](https://arscmh.com/info/10385) |
+| 湖南省水利水电勘测设计规划研究总院有限公司 | InSAR；GIS；测绘 | GIS应用工程师（InSAR地表形变监测方向） | 2026-12-15 18:00 | [公告](http://job.nju.edu.cn/Zhaopin/xiaozhao.html?id=9dc6c285-a1a7-92d4-7144-6c60175d20e9&type=1) |
+| 湖南中勘北斗研究院有限公司 | InSAR；遥感；北斗 | InSAR遥感算法工程师 | 未注明 | [职位页](http://job.kmust.edu.cn/detail/job?id=3289527) |
+| 云南南方地勘工程有限公司 | 0857；085704；测绘；遥感 | 遥感与测绘技术岗 | 未注明 | [公告](http://job.kmust.edu.cn/detail/job?career_id=732092&id=3289513) |
+| 中煤湖北地质局集团有限公司 | 085704；测绘；GIS | 测绘研发与地理信息技术岗 | 2027-06-30 | [官网](https://hubei.ccgc.cn/html/1365/2026-11-16/44908.html) |
+| 甘肃省地质矿产勘查开发局测绘勘查院 | 085704；测绘；遥感 | 测绘地理信息相关专业技术岗位 | 2027-05-31 | [官网](https://www.gsdkj.net/NoticeContent?aboutId=94af571e-81a9-4407-9f7d-d9e6d0c9ca6a) |
+| 长光卫星技术股份有限公司 | 测绘；遥感；资源与环境；GIS | 遥感测绘工程师；算法工程师；软件开发工程师 | 2027-05-31 | [网申](https://cgwx.hotjob.cn/) |
 | 中国科学院空天信息创新研究院 | 测绘；遥感；SAR；GIS | 空天信息、遥感与测绘相关科研岗位 | 2026-12-31 | [公告](https://job.nudt.edu.cn/campus/view/id/1007056) |
 
 ## 截止时间与状态口径
