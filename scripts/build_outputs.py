@@ -14,7 +14,7 @@ from openpyxl.utils import get_column_letter
 ROOT = Path(__file__).resolve().parents[1]
 DATA = ROOT / "data" / "jobs.csv"
 WATCH = ROOT / "data" / "watchlist_and_excluded.csv"
-AS_OF = date(2026, 11, 25)
+AS_OF = date(2026, 11, 26)
 FIELDS = [
     "id", "unit", "unit_type", "recruitment_type", "target", "education",
     "match_tags", "positions", "work_locations", "application", "deadline",
@@ -28,8 +28,8 @@ HEADERS = [
     "来源级别", "最近核验", "备注",
 ]
 WIDTHS = [7, 34, 16, 26, 28, 26, 28, 44, 32, 48, 28, 25, 25, 17, 50, 25, 15, 55]
-KEY_ROWS = [5, 4, 1, 2, 3, 36, 11, 13, 14, 27]
-KEY_LABELS = {5: "公告", 4: "公告", 1: "官网", 2: "公告", 3: "职位页", 36: "公告", 11: "官网", 13: "官网", 14: "网申", 27: "公告"}
+KEY_ROWS = [43, 5, 4, 1, 2, 3, 46, 36, 11, 13, 14, 27]
+KEY_LABELS = {43: "公告", 5: "公告", 4: "公告", 1: "官网", 2: "公告", 3: "职位页", 46: "官网", 36: "公告", 11: "官网", 13: "官网", 14: "网申", 27: "公告"}
 
 
 def load(path: Path) -> list[dict[str, str]]:
@@ -76,7 +76,7 @@ def build_readme(rows: list[dict[str, str]], watch: list[dict[str, str]]) -> Non
     unknown = sum("未注明" in r["deadline"] for r in rows)
     lines = [
         "# 2027届 InSAR / 测绘工程 / 资源与环境秋招岗位表", "",
-        f"> 最近核验：2026-11-25（北京时间）｜主表 **{len(rows)} 家单位**｜每天 12:00 核查并更新", "",
+        f"> 最近核验：{AS_OF.isoformat()}（北京时间）｜主表 **{len(rows)} 家单位**｜每天 12:00 核查并更新", "",
         "面向 **InSAR、测绘工程（按专业代码 085704 整理）、资源与环境（0857，限测绘/遥感/地理信息相关方向）** 的全国公开招聘信息。", "",
         "## 数据概览", "",
         f"- 可投递或官方岗位页仍可查：**{len(rows)} 家**（不代表所有名额均未招满）。",
@@ -92,7 +92,7 @@ def build_readme(rows: list[dict[str, str]], watch: list[dict[str, str]]) -> Non
     ]
     for record_id in KEY_ROWS:
         row = by_id[record_id]
-        target = row["application"] if row["application"].startswith(("http://", "https://")) else row["source_url"]
+        target = row["source_url"]
         lines.append(f"| {md(row['unit'])} | {md(row['match_tags'])} | {md(row['positions'])} | {md(row['deadline'])} | [{KEY_LABELS[record_id]}]({target}) |")
     lines += [
         "", "## 截止时间与状态口径", "",
@@ -106,7 +106,7 @@ def build_readme(rows: list[dict[str, str]], watch: list[dict[str, str]]) -> Non
         "1. 首版以 2027 届秋招为主，兼顾当前仍可投的相关校园岗位；严格限定测绘、遥感、GIS、InSAR、导航或资源与环境相关方向。",
         "2. “全国所有单位”无法由公开网络一次性证明穷尽。本仓库是**公开渠道可核验合集**，通过每日更新持续补漏，不作绝对穷尽承诺。",
         "3. 用户原始表述中的“测绘工程 087504”暂按常见专业代码 **085704** 校正；若原意确为其他代码，可再调整。",
-        "4. 同一集团的独立招聘单位在在岗位和投递入口不同的情况下单列。".replace("在在", "在"),
+        "4. 同一集团的独立招聘单位在岗位和投递入口不同的情况下单列。",
         "5. 任何投递前，请点击来源与网申入口核对岗位是否仍开放、专业目录、学历、工作地和材料要求。", "",
         "## 每日更新规则", "",
         "- 每天 12:00（Asia/Shanghai）检查新增公告、截止状态、网申入口及已有记录变化。",
@@ -162,7 +162,7 @@ def build_excel(rows: list[dict[str, str]], watch: list[dict[str, str]]) -> None
 
     info = wb.create_sheet("使用说明")
     info_rows = [
-        ("项目", "说明"), ("最近核验", "2026-11-25（北京时间）"),
+        ("项目", "说明"), ("最近核验", f"{AS_OF.isoformat()}（北京时间）"),
         ("记录数", f"{len(rows)}家在招/岗位页可查；{len(watch)}条待关注或排除"),
         ("专业代码", "用户原文087504暂按085704测绘工程整理"),
         ("收录边界", "0857仅收录测绘、遥感、GIS、InSAR相关方向，不扩展到所有环境类岗位"),
