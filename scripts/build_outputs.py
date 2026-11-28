@@ -14,7 +14,7 @@ from openpyxl.utils import get_column_letter
 ROOT = Path(__file__).resolve().parents[1]
 DATA = ROOT / "data" / "jobs.csv"
 WATCH = ROOT / "data" / "watchlist_and_excluded.csv"
-AS_OF = date(2026, 11, 27)
+AS_OF = date(2026, 11, 28)
 FIELDS = [
     "id", "unit", "unit_type", "recruitment_type", "target", "education",
     "match_tags", "positions", "work_locations", "application", "deadline",
@@ -28,8 +28,8 @@ HEADERS = [
     "来源级别", "最近核验", "备注",
 ]
 WIDTHS = [7, 34, 16, 26, 28, 26, 28, 44, 32, 48, 28, 25, 25, 17, 50, 25, 15, 55]
-KEY_ROWS = [43, 5, 4, 1, 2, 3, 47, 48, 46, 25, 36, 11, 13, 14, 27]
-KEY_LABELS = {43: "公告", 5: "公告", 4: "公告", 1: "官网", 2: "公告", 3: "职位页", 47: "公告", 48: "简章", 46: "官网", 25: "简章", 36: "公告", 11: "官网", 13: "官网", 14: "网申", 27: "公告"}
+KEY_ROWS = [49, 50, 5, 4, 1, 2, 3, 47, 48, 46, 25, 36, 11, 13, 14, 27]
+KEY_LABELS = {49: "公告", 50: "公告", 5: "公告", 4: "公告", 1: "官网", 2: "公告", 3: "职位页", 47: "公告", 48: "简章", 46: "官网", 25: "简章", 36: "公告", 11: "官网", 13: "官网", 14: "网申", 27: "公告"}
 
 
 def load(path: Path) -> list[dict[str, str]]:

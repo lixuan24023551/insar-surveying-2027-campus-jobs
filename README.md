@@ -1,15 +1,15 @@
 # 2027届 InSAR / 测绘工程 / 资源与环境秋招岗位表
 
-> 最近核验：2026-11-27（北京时间）｜主表 **48 家单位**｜每天 12:00 核查并更新
+> 最近核验：2026-11-28（北京时间）｜主表 **49 家单位**｜每天 12:00 核查并更新
 
 面向 **InSAR、测绘工程（按专业代码 085704 整理）、资源与环境（0857，限测绘/遥感/地理信息相关方向）** 的全国公开招聘信息。
 
 ## 数据概览
 
-- 可投递或官方岗位页仍可查：**48 家**（不代表所有名额均未招满）。
+- 可投递或官方岗位页仍可查：**49 家**（不代表所有名额均未招满）。
 - 明确出现 InSAR：**3 家**；明确标注 085704：**4 家**。
 - 招满即止：**3 家**；未注明截止：**22 家**。
-- 已截止、待正式公告或非校招备选：**19 条**，见 [`data/watchlist_and_excluded.csv`](data/watchlist_and_excluded.csv)。
+- 已截止、待正式公告或非校招备选：**26 条**，见 [`data/watchlist_and_excluded.csv`](data/watchlist_and_excluded.csv)。
 - 机器可读完整数据：[`data/jobs.csv`](data/jobs.csv)；运行生成脚本可得到可筛选工作簿 `2027_campus_jobs.xlsx`。
 
 ## 在招岗位（按明确截止日期优先排序）
@@ -20,7 +20,8 @@
 
 | 单位 | 匹配方向 | 相关岗位 | 截止时间 | 投递/来源 |
 |---|---|---|---|---|
-| 济钢集团有限公司 | 测绘科学与技术 | 测绘管理（1人，矿山现场测绘与制图） | 2026-11-27 17:00 | [公告](http://jngzw.jinan.gov.cn/col/col23870/art/2026/art_5e15ac0e791d47cba6127da77381d8f8.html) |
+| 中国铁路成都局集团有限公司 | 测绘；遥感；GIS（工务岗专业含测绘工程，以岗位信息表为准） | 工务及线桥、站房设备维护等操作技能岗位 | 2026-12-16 | [公告](https://rczp.china-railway.com.cn/page/platform/company_index.html?parentId=384) |
+| 中国铁路沈阳局集团有限公司 | 测绘工程（线桥、站房设备维护岗专业含测绘工程）；环境工程 | 铁路线桥、站房设备维护岗位（工务岗70人） | 2026-12-20 | [公告](https://job.dlut.edu.cn/frontpage/dlut/html/recruitmentFairForm.html?id=89947c126a9a4257ab3795b660b1f1ec) |
 | 中铁二院工程集团有限责任公司 | 测绘；遥感；GIS | 测绘类相关岗位 | 2026-11-30 | [公告](https://job.xjtu.edu.cn/xsfw/sys/emaphome/website/template/recruitmentDetail.html?gwid=3446b972e4f24aa38ebfa9432c08ac15&menuid=3446b972e4f24aa38ebfa9432c08ac15&msg=loading) |
 | 沈阳市勘察测绘研究院有限公司 | 测绘；遥感；自然资源调查 | 测绘工程师；调查监测工程师等 | 2026-11-30 | [公告](https://gzw.shenyang.gov.cn/rcdwjszl/202610/t20261020_5105555.html) |
 | 中煤航测遥感集团有限公司 | 测绘；遥感；GIS | 测绘地理信息；遥感应用；技术研发；软件开发 | 2026-12-09 | [官网](https://arscmh.com/info/10385) |
