@@ -1,0 +1,36 @@
+name: sync-once
+
+on:
+  push:
+    branches: [main]
+    paths:
+      - '.github/workflows/sync-once.yml'
+
+permissions:
+  contents: write
+
+jobs:
+  sync:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+
+      - name: Download authoritative data files
+        run: |
+          curl -fsSL -o data/jobs.csv "https://aka.doubaocdn.com/s/WLbjdxcUfa"
+          curl -fsSL -o data/watchlist_and_excluded.csv "https://aka.doubaocdn.com/s/jOEhZpRyqz"
+          curl -fsSL -o scripts/build_outputs.py "https://aka.doubaocdn.com/s/SVUoWyN2xa"
+
+      - name: Install deps
+        run: python3 -m pip install -r requirements.txt
+
+      - name: Rebuild outputs
+        run: python3 scripts/build_outputs.py
+
+      - name: Commit and push
+        run: |
+          git config user.name "sync-bot"
+          git config user.email "sync-bot@users.noreply.github.com"
+          git add data scripts/build_outputs.py README.md 2027_campus_jobs.xlsx
+          git commit -m "data: 2026-11-28 全国表更新（新增成都局、沈阳局；济钢移入待关注）"
+          git push
